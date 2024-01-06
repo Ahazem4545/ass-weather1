@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+        <nav class="navbar navbar-expand-lg mt-3 ">
+            <div class="container-fluid">
+              <div class="container d-flex justify-content-start mt-1">
+                <img src="img/logo@2x.png" alt="" class="img-logo ">
+                
+                <div class="words-logo mt-1 ">
+                   <h1 class="h6 weather">weather</h1>
+                   <p class="word-under-weather ">tagline goes here</p>
+                 </div>
+                 </div>  
+                
+              <div class="collapse mt-1 navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item ">
+                    <a class="nav-link active nav-links mx-4" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link nav-links mx-4" href="#">News</a>
+                  </li>
+                  <li class="nav-item  ">
+                    <a class="nav-link nav-links mx-4" href="#">Live<span class="span1">_</span>cameras</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link  nav-links mx-4" href="#">photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  nav-links mx-4" href="#">Contact</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+
+          <div class="home   " id="home">
+          <div class="bg-img ">
+
+            <div class="my-4 row  mx-5 d-flex justify-content-center align-items-start ">
+              <div class="input-group my-5 col-md-9  input-bg ">
+                <input type="text"  class="form-control input-find placeholder-color bg-transparent text-white rounded-pill" placeholder="find your location..."  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="getLocation()" class="btn btn-outline-secondary rounded-pill  btn-find" type="button" id="button-addon2">Find</button>
+              </div>
+            
+            </div>
+            </div>
+            <div class="container mt-4  translate-middle-y  ">
+              <div class="row ROW-ALL rounded-5 ">
+                <div class="col-lg-4 col-md-12 date-today-bg ">
+                  <div class="date-today"> 
+                    <div class=" d-inline-block day  fs-6 "></div>
+                  <div class=" d-inline-block month  float-start month float-end fs-6 "></div>
+                </div>
+                 
+                  
+                  <div class="location mt-4">cairo </div>
+                  <div class="main-degree fw-bold text-white">13.5<sup>o</sup>C</div>
+                  <div><img src="img/116.webp" alt=""></div>
+                  <div class="text-info fs-6 m-3 mb-5">clear</div>
+                  <div class="d-flex justify-content-start   ">
+                    <div class="me-3 "><img src="img/icon-umberella.png" class="me-1" alt="">20%</div> 
+                    <div class="me-3 mb-4" ><img src="img/icon-wind.png" class="me-1" alt="">18km/h</div>
+                     <div class="me-3 " ><img src="img/icon-compass.png" class="me-1" alt="">East</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12  date-today-bg2 text-center">
+                  <div class=" fs-6 text-center day-2 date-today"></div>
+                  <div class="text-center mt-5 mb-3"><img src="img/113.webp" alt=""></div>
+                  <div class=" text-white two-day-degree">21.1<sup>o</sup>C</div> 
+                  <div>13.9 <sup>o</sup></div> 
+                  <div class="text-info mt-4">sunny</div>
+                </div>
+                <div class="col-lg-4 col-md-12  date-today-bg3  text-center">
+                  <div class="text-center fs-6 date-today day-3"></div>
+                  <div class="text-center mt-5 mb-3"><img src="img/113.webp" alt=""></div>
+                  <div class=" text-white two-day-degree">20.5<sup>o</sup>C</div> 
+                  <div>14.3<sup>o</sup></div> 
+                  <div class="text-info mt-4">Overcast</div>
+                </div>
+
+
+
+              </div>
+            </div>
+              
+          </div>
+
+            <div class="foot ">
+              <div class="container">
+                <div class="row  ">
+                  <div class="col-lg-8 col-md-12 ">
+                      <div class="input-group my-4  input-bg w-auto ">
+                        <input type="text" class="form-control input-find placeholder-color bg-transparent text-white rounded-pill" placeholder="Enter yor email to subscribe..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary  btn-find rounded-pill " type="button" id="button-addon2">Subscribe</button>
+                      </div>
+                    
+                </div>
+                <div class="col-lg-2 col-xs-12 offset-1">
+                  <div class="social-links d-flex justify-content-between  mt-4">
+                    <div class="icon-brands d-flex justify-content-center align-items-center rounded-5  ">  <a href=""><i class="fa-brands fa-facebook-f fa-xl color-icon "></i></a></div>
+                    <div class="icon-brands d-flex justify-content-center align-items-center rounded-5 ">  <a href=""><i class="fa-brands fa-twitter fa-xl color-icon"></i></a></div>
+                    <div class="icon-brands d-flex justify-content-center align-items-center rounded-5 ">  <a href=""><i class="fa-brands fa-google-plus fa-xl color-icon"></i></a></div>
+                    <div class="icon-brands d-flex justify-content-center align-items-center rounded-5  ">  <a href=""><i class="fa-brands fa-pinterest fa-xl color-icon"></i></a></div>
+                  
+                  </div>
+                </div>
+              </div>  
+              <div class="end">
+              <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+              </div>
+            </div>
+
+          
+  
+
+
+
+    
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
